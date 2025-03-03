@@ -5,17 +5,6 @@ document.getElementById("discover-new").addEventListener("click", function() {
 });
 
 
-
-// const completeButtons = document.querySelectorAll("#complete-button");
-// const currentTaskElement=document.getElementById("taskCount");
-// completeButtons.forEach(button => {
-//   button.addEventListener('click', () => {
-//     button.disabled = true
-//     const remainingTask=parseInt(currentTaskElement.innerText)-1
-//     currentTaskElement.innerText=remainingTask
-//   });
-// });
-
 const completeButtons = document.querySelectorAll("#complete-button");
 const currentTaskElement = document.getElementById("taskCount");
 const completedCountElement = document.getElementById("completedCount"); 
@@ -48,7 +37,7 @@ completeButtons.forEach(button => {
             theme = 'light'
         }
 
-        if (theme === )
+        // if (theme === )
       })
     }
   });
