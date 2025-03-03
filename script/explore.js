@@ -27,18 +27,18 @@ completeButtons.forEach(button => {
       const historyMessage = document.createElement("p");
       historyMessage.innerText = `You have completed the task Fix Mobile Button issue at ${currentTime}`;
       historySection.appendChild(historyMessage);
+    
 
-      const colorChanger = document.getElementById("colorChanger")
-      let theme = 'light'
-      colorChangerImg.addEventListener('click', function(){
-        if (theme = 'light'){
-            theme = 'dark'
-        } else {
-            theme = 'light'
-        }
+      const colorChanger = document.getElementById('colorChanger');
+      const colors = ['#FF5733', '#33FF57', '#5733FF', '#FFFF33', '#33FFFF']; 
+      let colorIndex = 0;
+      
+      colorChanger.addEventListener('click', function() {
+          document.body.style.backgroundColor = colors[colorIndex];
+          colorIndex = (colorIndex + 1) % colors.length; 
+      });
 
-        // if (theme === )
-      })
+     
     }
   });
 });
